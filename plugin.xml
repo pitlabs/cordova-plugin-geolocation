@@ -216,6 +216,14 @@ xmlns:android="http://schemas.android.com/apk/res/android"
             <DeviceCapability Name="location" />
         </config-file>
 
+        <config-file target="package.phone.appxmanifest" parent="/Package/Capabilities">
+            <DeviceCapability Name="location" />
+        </config-file>
+		
+		<config-file target="package.windows.appxmanifest" parent="/Package/Capabilities">
+            <DeviceCapability Name="location" />
+        </config-file>
+
         <js-module src="src/windows/GeolocationProxy.js" name="GeolocationProxy">
             <runs />
         </js-module>
